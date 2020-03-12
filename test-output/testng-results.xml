@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51" started-at="2020-03-12T07:50:37Z" finished-at="2020-03-12T07:50:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51" started-at="2020-03-12T07:50:37Z" finished-at="2020-03-12T07:50:37Z">
+      <class name="Customer">
+        <test-method status="PASS" signature="customer_1_Details()[pri:0, instance:Customer@7dc7cbad]" name="customer_1_Details" duration-ms="14" started-at="2020-03-12T07:50:37Z" finished-at="2020-03-12T07:50:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_1_Details -->
+        <test-method status="PASS" signature="customer_2_Details()[pri:0, instance:Customer@7dc7cbad]" name="customer_2_Details" duration-ms="2" started-at="2020-03-12T07:50:37Z" finished-at="2020-03-12T07:50:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_2_Details -->
+        <test-method status="PASS" signature="customer_3_Details()[pri:0, instance:Customer@7dc7cbad]" name="customer_3_Details" duration-ms="2" started-at="2020-03-12T07:50:37Z" finished-at="2020-03-12T07:50:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_3_Details -->
+      </class> <!-- Customer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
