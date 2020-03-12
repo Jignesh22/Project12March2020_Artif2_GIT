@@ -8,13 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">51</td><td></td><td></td></tr>
+<tr><th colspan="7">Maven test suite1</th></tr>
+<tr><td><a href="#t0">AddCorporate</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">62</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Customer</td><td><a href="#m0">customer_1_Details</a></td><td rowspan="1">1583999437586</td><td rowspan="1">14</td></tr><tr class="passedeven"><td><a href="#m1">customer_2_Details</a></td><td rowspan="1">1583999437603</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">customer_3_Details</a></td><td rowspan="1">1583999437608</td><td rowspan="1">2</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Maven test suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AddCorporate &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">packageCustomer.Customer</td><td><a href="#m0">customer_1_Details</a></td><td rowspan="1">1584014072787</td><td rowspan="1">18</td></tr><tr><th colspan="4">AddCorporate &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">packageCustomer.Customer</td><td><a href="#m1">customer_2_Details</a></td><td rowspan="1">1584014072812</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">customer_3_Details</a></td><td rowspan="1">1584014072817</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Customer#customer_1_Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Customer#customer_2_Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Customer#customer_3_Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AddCorporate</h2><h3 id="m0">packageCustomer.Customer#customer_1_Details</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at packageCustomer.Customer.customer_1_Details(Customer.java:11)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">packageCustomer.Customer#customer_2_Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">packageCustomer.Customer#customer_3_Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maven test suite1">
+	<test name="AddCorporate">
+
+		<classes>
+			<class name="packageCustomer.Customer">
+			</class>
+		</classes>
+	</test>
+</suite>
+  			

@@ -1,3 +1,5 @@
+package packageCustomer;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Customer {
@@ -6,6 +8,7 @@ public class Customer {
 	public void customer_1_Details() {
 		System.out.println("Customer-1:");
 		System.out.println("CustomerName: Abhinandan Sapkal"+"\n");
+		//Assert.fail();
 	}
 	@Test
 	public void customer_2_Details() {
