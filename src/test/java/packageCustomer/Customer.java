@@ -19,6 +19,7 @@ public class Customer {
 	public void customer_3_Details() {
 		System.out.println("Customer-3:");
 		System.out.println("CustomerName: Jignesh Patel"+"\n");
+		
 	}
 	
 	
