@@ -10,5 +10,15 @@ pipelines:
     - step:
         caches:
           - maven
+	services:
+	  - selenium-standalone
         script: # Modify the commands below to build your repository.
           - mvn -B verify # -B batch mode makes Maven less verbose
+
+definitions:
+  services:
+    selenium-standalone:
+      image: selenium/standalone-chrome:latest
+      port: 4444
+
+
