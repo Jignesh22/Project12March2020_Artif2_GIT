@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10047" started-at="2020-03-13T08:54:43Z" finished-at="2020-03-13T08:54:53Z">
+  <suite name="Default suite" duration-ms="9082" started-at="2020-03-13T11:13:53Z" finished-at="2020-03-13T11:14:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10047" started-at="2020-03-13T08:54:43Z" finished-at="2020-03-13T08:54:53Z">
+    <test name="Default test" duration-ms="9082" started-at="2020-03-13T11:13:53Z" finished-at="2020-03-13T11:14:02Z">
       <class name="packageCustomer.Customer">
-        <test-method status="PASS" signature="launchBrowserAndOpenURL()[pri:1, instance:packageCustomer.Customer@5e5792a0]" name="launchBrowserAndOpenURL" duration-ms="6334" started-at="2020-03-13T08:54:43Z" finished-at="2020-03-13T08:54:49Z">
+        <test-method status="PASS" signature="launchBrowserAndOpenURL()[pri:1, instance:packageCustomer.Customer@5e5792a0]" name="launchBrowserAndOpenURL" duration-ms="5749" started-at="2020-03-13T11:13:53Z" finished-at="2020-03-13T11:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserAndOpenURL -->
-        <test-method status="PASS" signature="performLogin()[pri:2, instance:packageCustomer.Customer@5e5792a0]" name="performLogin" duration-ms="3563" started-at="2020-03-13T08:54:49Z" finished-at="2020-03-13T08:54:53Z">
+        <test-method status="PASS" signature="performLogin()[pri:2, instance:packageCustomer.Customer@5e5792a0]" name="performLogin" duration-ms="3176" started-at="2020-03-13T11:13:59Z" finished-at="2020-03-13T11:14:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performLogin -->
-        <test-method status="PASS" signature="closingBrowser()[pri:3, instance:packageCustomer.Customer@5e5792a0]" name="closingBrowser" duration-ms="114" started-at="2020-03-13T08:54:53Z" finished-at="2020-03-13T08:54:53Z">
+        <test-method status="PASS" signature="closingBrowser()[pri:3, instance:packageCustomer.Customer@5e5792a0]" name="closingBrowser" duration-ms="119" started-at="2020-03-13T11:14:02Z" finished-at="2020-03-13T11:14:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingBrowser -->

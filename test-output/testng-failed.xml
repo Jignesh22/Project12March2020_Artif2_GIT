@@ -6,6 +6,8 @@
       <class name="packageCustomer.Customer">
         <methods>
           <include name="performLogin"/>
+          <include name="launchBrowserAndOpenURL"/>
+          <include name="closingBrowser"/>
         </methods>
       </class> <!-- packageCustomer.Customer -->
     </classes>
