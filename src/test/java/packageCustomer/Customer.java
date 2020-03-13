@@ -12,8 +12,8 @@ public class Customer {
 	@Test(priority=1)
 	public void launchBrowserAndOpenURL() throws InterruptedException {
 		//launching chrome browser
-		System.out.println("Run1: launching firefox browser"); 
-	    System.setProperty("webdriver.gecko.driver", "./chromedriver");
+		System.out.println("Run1: launching chrome browser"); 
+	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
 	    driver = new ChromeDriver();	
 	    Thread.sleep(2000);
 	    //Opening URL
