@@ -2,6 +2,7 @@ package packageCustomer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,8 +14,12 @@ public class Customer {
 	public void launchBrowserAndOpenURL() throws InterruptedException {
 		//launching chrome browser
 		System.out.println("Run1: launching chrome browser"); 
-	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
-	    driver = new ChromeDriver();	
+//	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
+//	    driver = new ChromeDriver();	
+	    System.setProperty("webdriver.gecko.driver", "./geckodriver");
+	    driver = new FirefoxDriver();			
+		
+		
 	    Thread.sleep(2000);
 	    //Opening URL
 		System.out.println("Run1: Opening url"); 
