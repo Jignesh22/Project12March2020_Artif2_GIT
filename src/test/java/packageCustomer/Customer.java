@@ -2,6 +2,7 @@ package packageCustomer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,7 +16,12 @@ public class Customer {
 		//launching chrome browser
 		System.out.println("Run1: launching chrome browser"); 
 	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
-	    driver = new ChromeDriver();	
+	    
+	    ChromeOptions options = new ChromeOptions();
+	    options.setBinary("/opt/google/chrome/chrome");
+	    
+	    
+	    driver = new ChromeDriver(options);	
 //	    System.setProperty("webdriver.gecko.driver", "./geckodriver");
 //	    driver = new FirefoxDriver();			
 		
