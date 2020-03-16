@@ -14,10 +14,10 @@ public class Customer {
 	public void launchBrowserAndOpenURL() throws InterruptedException {
 		//launching chrome browser
 		System.out.println("Run1: launching chrome browser"); 
-//	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
-//	    driver = new ChromeDriver();	
-	    System.setProperty("webdriver.gecko.driver", "./geckodriver");
-	    driver = new FirefoxDriver();			
+	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
+	    driver = new ChromeDriver();	
+//	    System.setProperty("webdriver.gecko.driver", "./geckodriver");
+//	    driver = new FirefoxDriver();			
 		
 		
 	    Thread.sleep(2000);
