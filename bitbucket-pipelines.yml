@@ -9,7 +9,7 @@ pipelines:
     selenium-test:
      - step:
          script:
-          - mvn test
+          - mvn -U clean test
          services:
           - selenium-chrome
 definitions:

@@ -20,12 +20,16 @@ public class Customer {
 		//launching chrome browser
 		System.out.println("Run1: launching chrome browser"); 
 		
+
+//Run remotely inside docker container	
 		URL remoteURL = new URL("http://127.0.0.1:4444/wd/hub");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-maximized");
 		driver = new RemoteWebDriver(remoteURL, options);
-//	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
-//	    driver = new ChromeDriver();
+	/*	
+	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
+	    driver = new ChromeDriver();
+	 */	
 	    Thread.sleep(2000);
 	    
 	    //Opening URL
