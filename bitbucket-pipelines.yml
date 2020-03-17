@@ -3,12 +3,16 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: maven:3.3.9
-
+image: atlassian/default-image:2
 pipelines:
-  default:
-    - step:
-        caches:
-          - maven
-        script: # Modify the commands below to build your repository.
-         - mvn -B verify # -B batch mode makes Maven less verbose
+  custom:
+    selenium-test:
+     - step:
+         script:
+          - mvn test
+         services:
+          - selenium-chrome
+definitions:
+  services:
+    selenium-chrome:
+      image: selenium/standalone-chrome         
