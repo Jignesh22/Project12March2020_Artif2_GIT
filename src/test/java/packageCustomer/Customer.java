@@ -16,15 +16,7 @@ public class Customer {
 		//launching chrome browser
 		System.out.println("Run1: launching chrome browser"); 
 	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
-	    
-	    ChromeOptions options = new ChromeOptions();
-//	    options.setBinary("/opt/google/chrome/chrome");
-	    
-	    
-	    driver = new ChromeDriver(options);	
-//	    System.setProperty("webdriver.gecko.driver", "./geckodriver");
-//	    driver = new FirefoxDriver();			
-		
+	    driver = new ChromeDriver();	
 		
 	    Thread.sleep(2000);
 	    //Opening URL
