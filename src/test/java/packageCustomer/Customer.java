@@ -17,7 +17,7 @@ public class Customer {
 		System.out.println("Run1: launching chrome browser"); 
 	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
 	    
-//	    ChromeOptions options = new ChromeOptions();
+	    ChromeOptions options = new ChromeOptions();
 //	    options.setBinary("/opt/google/chrome/chrome");
 	    
 	    
