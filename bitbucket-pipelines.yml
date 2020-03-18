@@ -15,4 +15,4 @@ pipelines:
 definitions:
   services:
     selenium-chrome:
-      image: selenium/standalone-chrome         
+      image: selenium/standalone-chrome      
