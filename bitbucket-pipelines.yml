@@ -3,7 +3,7 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: node:6.9.4
+image: atlassian/default-image:2
 pipelines:
   branches:
     master:
@@ -16,10 +16,4 @@ pipelines:
             - wget -q -O /usr/bin/xvfb-chrome https://bitbucket.org/atlassian/docker-node-chrome-firefox/raw/ff180e2f16ea8639d4ca4a3abb0017ee23c2836c/scripts/xvfb-chrome
             - ln -sf /usr/bin/xvfb-chrome /usr/bin/google-chrome
             - chmod 755 /usr/bin/google-chrome
-            - npm install -g @angular/cli
-            - npm install -g now
-            - npm install
-            - ng test --single-run
-            - ng build --target=production --base-href /
-            - now dist --public -t=$NOW_TOKEN
             - mvn test
