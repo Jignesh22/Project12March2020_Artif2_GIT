@@ -9,8 +9,6 @@ pipelines:
     selenium-test:
      - step:
          script:
-          - echo $PATH
-          - chromedriver --version
           - mvn -U clean test
          services:
           - selenium-chrome
