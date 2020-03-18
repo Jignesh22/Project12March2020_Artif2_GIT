@@ -10,8 +10,6 @@ pipelines:
      - step:
          script:
           - echo $PATH
-          - whereis google-chrome
-          - whereis chromedriver
           - chromedriver --version
           - mvn -U clean test
          services:
