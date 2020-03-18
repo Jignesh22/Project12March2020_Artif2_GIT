@@ -9,7 +9,7 @@ pipelines:
     selenium-test:
      - step:
          script:
-          - mvn -U clean test
+          - whereis google-chrome
          services:
           - selenium-chrome
 definitions:
