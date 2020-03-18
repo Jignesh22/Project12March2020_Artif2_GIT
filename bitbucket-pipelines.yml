@@ -17,3 +17,9 @@ pipelines:
             - ln -sf /usr/bin/xvfb-chrome /usr/bin/google-chrome
             - chmod 755 /usr/bin/google-chrome
             - mvn test
+          services:
+           - selenium-chrome
+definitions:
+  services:
+    selenium-chrome:
+      image: selenium/standalone-chrome 
