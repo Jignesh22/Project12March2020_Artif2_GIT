@@ -11,11 +11,6 @@ pipelines:
          services:
            - docker
          script:
-           - docker history
-           - wget -N https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip -P ~/
-           - unzip ~/chromedriver_linux64.zip -d ~/
-           - rm ~/chromedriver_linux64.zip
-           - mv -f ~/chromedriver /usr/local/bin/chromedriver
-           - chown root:root /usr/local/bin/chromedriver
-           - chmod 0755 /usr/local/bin/chromedriver
+           - docker pull selenium/standalone-chrome:latest
+           - docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
            - mvn test
