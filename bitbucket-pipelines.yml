@@ -3,16 +3,23 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: maven:3.6.3
-pipelines:
-  custom:
-    selenium-test:
-     - step:
-         script:
-          - mvn -U clean test
-         services:
-          - selenium-chrome
-definitions:
-  services:
-    selenium-chrome:
-      image: selenium/standalone-chrome      
+image: maven:latest
+
+variables:
+  MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository/
+    - target/
+
+build:
+  stage: build
+  script:
+    - mvn $MAVEN_CLI_OPTS compile
+
+test:
+  stage: test
+  script:
+    - mvn $MAVEN_CLI_OPTS test
