@@ -12,5 +12,5 @@ pipelines:
            - docker
          script:
            - docker pull selenium/standalone-chrome:latest
-           - docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
+           - docker run -d -p 4444:4444 --shm-size=2g selenium/standalone-chrome:3.141.59-zirconium
            - mvn test
