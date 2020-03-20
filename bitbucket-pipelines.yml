@@ -9,8 +9,10 @@ pipelines:
     selenium-test:
      - step:
          services:
-           - docker
+           - selenium-standalone
          script:
-           - docker pull selenium/standalone-chrome:latest
-           - docker run -d -p 4444:4444 --shm-size=2g selenium/standalone-chrome:3.141.59-zirconium
-           - mvn test
+           - mvn test  
+definitions:
+    services:
+      selenium-standalone:
+           image: selenium/standalone-chrome:latest
