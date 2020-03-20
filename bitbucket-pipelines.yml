@@ -9,8 +9,8 @@ pipelines:
     selenium-compile:
      - step:
          script:
-           - mvn $MAVEN_CLI_OPTS compile
+           - mvn compile
     selenium-test:
      - step:
          script:
-           - mvn $MAVEN_CLI_OPTS test
+           - mvn test
