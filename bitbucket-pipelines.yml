@@ -8,6 +8,8 @@ pipelines:
   custom:
     selenium-test:
      - step:
+         services:
+           - docker
          script:
            - docker history
            - wget -N https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip -P ~/
