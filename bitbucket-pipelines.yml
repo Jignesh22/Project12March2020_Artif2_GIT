@@ -11,6 +11,7 @@ pipelines:
          services:
            - selenium-standalone
          script:
+           - mvn compile
            - mvn test  
 definitions:
     services:
