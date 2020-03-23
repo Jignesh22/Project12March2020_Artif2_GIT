@@ -11,7 +11,7 @@ pipelines:
          services:
            - selenium-standalone
          script:
-           - ls -l /opt/atlassian/pipelines/agent/build/
+           - ls -l /opt/atlassian/pipelines/agent/build/driver
            - mvn compile
            - mvn test  
 definitions:
