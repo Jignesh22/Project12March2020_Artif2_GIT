@@ -8,12 +8,6 @@ pipelines:
   custom:
     selenium-test:
      - step:
-         services:
-           - selenium-standalone
          script:
            - mvn compile
            - mvn test  
-definitions:
-    services:
-      selenium-standalone:
-           image: selenium/standalone-chrome:latest
