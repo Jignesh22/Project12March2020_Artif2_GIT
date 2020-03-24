@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30186" started-at="2020-03-24T07:26:54Z" finished-at="2020-03-24T07:27:24Z">
+  <suite name="Default suite" duration-ms="28042" started-at="2020-03-24T08:50:00Z" finished-at="2020-03-24T08:50:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30186" started-at="2020-03-24T07:26:54Z" finished-at="2020-03-24T07:27:24Z">
+    <test name="Default test" duration-ms="28042" started-at="2020-03-24T08:50:00Z" finished-at="2020-03-24T08:50:28Z">
       <class name="packageCustomer.Customer">
-        <test-method status="PASS" signature="launchBrowserAndOpenURL()[pri:1, instance:packageCustomer.Customer@5e5792a0]" name="launchBrowserAndOpenURL" duration-ms="30158" started-at="2020-03-24T07:26:54Z" finished-at="2020-03-24T07:27:24Z">
+        <test-method status="PASS" signature="launchBrowserAndOpenURL()[pri:1, instance:packageCustomer.Customer@5e5792a0]" name="launchBrowserAndOpenURL" duration-ms="28015" started-at="2020-03-24T08:50:00Z" finished-at="2020-03-24T08:50:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserAndOpenURL -->

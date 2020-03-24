@@ -24,7 +24,7 @@ public class Customer {
 	//	ChromeOptions options = new ChromeOptions();
 	//	options.setBinary("/usr/bin/google-chrome");
 	//	driver = new RemoteWebDriver(remoteURL, options);
-	//    System.setProperty("webdriver.chrome.driver", "./chromedriver");
+	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
 
 		driver = new ChromeDriver();
 	    Thread.sleep(2000);
@@ -33,7 +33,6 @@ public class Customer {
 		System.out.println("RUN-2: Chrome Launched"); 
 	    driver.get("http://opsqa.radixdev68.com/admin");
 		System.out.println("Run-3: URL opened"); 
-	    Thread.sleep(2000);
 	}
 
 
