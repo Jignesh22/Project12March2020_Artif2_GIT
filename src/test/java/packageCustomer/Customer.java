@@ -19,20 +19,22 @@ public class Customer {
 	public void launchBrowserAndOpenURL() throws InterruptedException, MalformedURLException {
 		//launching chrome browser
 		System.out.println("RUN-1: launching chrome browser"); 
-
-	//	URL remoteURL = new URL("http://127.0.0.1:4444/wd/hub");
-	//	ChromeOptions options = new ChromeOptions();
-	//	options.setBinary("/usr/bin/google-chrome");
-	//	driver = new RemoteWebDriver(remoteURL, options);
 	    System.setProperty("webdriver.chrome.driver", "./chromedriver");
-
-		driver = new ChromeDriver();
+		System.out.println("RUN-2"); 
+	//	URL remoteURL = new URL("http://127.0.0.1:4444/wd/hub");
+		ChromeOptions options = new ChromeOptions();
+		System.out.println("RUN-3"); 
+	//	options.setBinary("/usr/bin/google-chrome");
+		options.addArguments("headless");
+		driver = new ChromeDriver(options);
 	    Thread.sleep(2000);
 	     
 	    //Opening URL
-		System.out.println("RUN-2: Chrome Launched"); 
+		System.out.println("RUN-4: Chrome Launched"); 
 	    driver.get("http://opsqa.radixdev68.com/admin");
-		System.out.println("Run-3: URL opened"); 
+		System.out.println("Run-5: URL opened"); 
+		driver.close();
+		System.out.println("Run-6: browser closed");
 	}
 
 
