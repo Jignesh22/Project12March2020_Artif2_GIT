@@ -29,6 +29,7 @@ public class Customer {
 		driver = new ChromeDriver(options);
 	    Thread.sleep(2000);
 	     
+	    
 	    //Opening URL
 		System.out.println("RUN-4: Chrome Launched"); 
 	    driver.get("http://opsqa.radixdev68.com/admin");
