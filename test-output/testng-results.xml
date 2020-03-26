@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3202" started-at="2020-03-24T11:20:55Z" finished-at="2020-03-24T11:20:58Z">
+  <suite started-at="2020-03-26T06:16:30Z" name="Default suite" finished-at="2020-03-26T06:16:49Z" duration-ms="18792">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3202" started-at="2020-03-24T11:20:55Z" finished-at="2020-03-24T11:20:58Z">
+    <test started-at="2020-03-26T06:16:30Z" name="Default test" finished-at="2020-03-26T06:16:49Z" duration-ms="18792">
       <class name="packageCustomer.Customer">
-        <test-method status="PASS" signature="launchBrowserAndOpenURL()[pri:1, instance:packageCustomer.Customer@5e5792a0]" name="launchBrowserAndOpenURL" duration-ms="3178" started-at="2020-03-24T11:20:55Z" finished-at="2020-03-24T11:20:58Z">
+        <test-method signature="launchBrowserAndOpenURL()[pri:1, instance:packageCustomer.Customer@3c3d9b6b]" started-at="2020-03-26T06:16:30Z" name="launchBrowserAndOpenURL" finished-at="2020-03-26T06:16:49Z" duration-ms="18754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserAndOpenURL -->
